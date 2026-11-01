@@ -348,6 +348,80 @@ function App() {
           </div>
         </section>
 
+        {/* Projects Section */}
+        <section className="projects-section" id="projects">
+          <div className="container projects-container">
+
+            <div className="section-heading">
+              <span className="section-label">05 / MY PROJECTS</span>
+              <h2>Things I've built.</h2>
+              <p>A selection of my independent Android applications.</p>
+            </div>
+
+            <div className="projects-grid">
+
+              <article className="project-card">
+                <div className="project-visual blue-pencil-visual">
+                  <span className="project-symbol">🎨</span>
+                  <span className="project-category">CREATIVE APP</span>
+                </div>
+
+                <div className="project-info">
+                  <div className="project-title-row">
+                    <h3>Blue Pencil</h3>
+                    <span className="project-status">PUBLISHED</span>
+                  </div>
+
+                  <p>
+                    A creative coloring app for children, featuring a large
+                    collection of coloring pages and a fun character to make
+                    the experience more engaging.
+                  </p>
+
+                  <div className="project-tags">
+                    <span>Java</span>
+                    <span>Android</span>
+                    <span>In-App Purchases</span>
+                  </div>
+
+                  <div className="project-result">
+                    <strong>4,000+</strong>
+                    <span>Installs</span>
+                  </div>
+                </div>
+              </article>
+
+              <article className="project-card">
+                <div className="project-visual number-visual">
+                  <span className="project-symbol">📞</span>
+                  <span className="project-category">EDUCATIONAL GAME</span>
+                </div>
+
+                <div className="project-info">
+                  <div className="project-title-row">
+                    <h3>Know My Number</h3>
+                    <span className="project-status">ANDROID APP</span>
+                  </div>
+
+                  <p>
+                    An educational game that helps children memorize their
+                    parents' phone numbers through eight fun mini-games,
+                    music and animations.
+                  </p>
+
+                  <div className="project-tags">
+                    <span>Kotlin</span>
+                    <span>Android</span>
+                    <span>Firebase</span>
+                    <span>In-App Purchases</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
         {/* Education Section */}
         <section className="education-section" id="education">
           <div className="container education-container">
@@ -425,80 +499,6 @@ function App() {
               </a>
             </div>
 
-          </div>
-        </section>
-
-        {/* Projects Section */}
-        <section className="projects-section" id="projects">
-          <div className="container projects-container">
-
-            <div className="section-heading">
-              <span className="section-label">05 / MY PROJECTS</span>
-              <h2>Things I've built.</h2>
-              <p>A selection of my independent Android applications.</p>
-            </div>
-
-            <div className="projects-grid">
-
-              <article className="project-card">
-                <div className="project-visual blue-pencil-visual">
-                  <span className="project-symbol">🎨</span>
-                  <span className="project-category">CREATIVE APP</span>
-                </div>
-
-                <div className="project-info">
-                  <div className="project-title-row">
-                    <h3>Blue Pencil</h3>
-                    <span className="project-status">PUBLISHED</span>
-                  </div>
-
-                  <p>
-                    A creative coloring app for children, featuring a large
-                    collection of coloring pages and a fun character to make
-                    the experience more engaging.
-                  </p>
-
-                  <div className="project-tags">
-                    <span>Java</span>
-                    <span>Android</span>
-                    <span>In-App Purchases</span>
-                  </div>
-
-                  <div className="project-result">
-                    <strong>4,000+</strong>
-                    <span>Installs</span>
-                  </div>
-                </div>
-              </article>
-
-              <article className="project-card">
-                <div className="project-visual number-visual">
-                  <span className="project-symbol">📞</span>
-                  <span className="project-category">EDUCATIONAL GAME</span>
-                </div>
-
-                <div className="project-info">
-                  <div className="project-title-row">
-                    <h3>Know My Number</h3>
-                    <span className="project-status">ANDROID APP</span>
-                  </div>
-
-                  <p>
-                    An educational game that helps children memorize their
-                    parents' phone numbers through eight fun mini-games,
-                    music and animations.
-                  </p>
-
-                  <div className="project-tags">
-                    <span>Kotlin</span>
-                    <span>Android</span>
-                    <span>Firebase</span>
-                    <span>In-App Purchases</span>
-                  </div>
-                </div>
-              </article>
-
-            </div>
           </div>
         </section>
 
