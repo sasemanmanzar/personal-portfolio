@@ -1254,7 +1254,7 @@
 .hero-visual {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 390px;
   margin: 0 auto;
   display: flex;
@@ -1434,5 +1434,19 @@
 .orbit-two {
   width: 420px;
   height: 420px;
+}
+
+/* Smaller desktop screens */
+@media (max-width: 1100px) and (min-width: 769px) {
+  .hero-visual {
+    transform: scale(0.82);
+  }
+}
+
+/* Mobile and small tablets */
+@media (max-width: 768px) {
+  .hero-visual {
+    display: none;
+  }
 }
 
