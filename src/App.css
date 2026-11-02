@@ -55,7 +55,7 @@
   color: var(--accent-hover);
 }
 
-.contact-button {
+.contact-button-header {
   background: var(--primary-color);
   color: var(--background-color);
   padding: 12px 22px;
@@ -65,12 +65,12 @@
   transition: all 0.3s ease;
 }
 
-.contact-button:hover {
+.contact-button-header:hover {
   background: var(--accent-hover);
   transform: translateY(-2px);
 }
 
-.contact-button span {
+.contact-button-header span {
   margin-left: 7px;
 }
 
@@ -310,7 +310,7 @@
 
 @media (max-width: 420px) {
 
-  .contact-button {
+  .contact-button-header {
     padding: 10px 14px;
     font-size: 11px;
   }
@@ -1196,4 +1196,54 @@
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+
+/* Hero App Showcase */
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  height: 390px;
+  margin: 0 auto;
+}
+
+.device {
+  position: absolute;
+  aspect-ratio: 16 / 9;
+  padding: 9px;
+  background: #172C45;
+  border: 1px solid #304966;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(25, 59, 99, 0.16);
+}
+
+.device-screen {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.device-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.device-main {
+  width: 82%;
+  top: 15px;
+  right: 0;
+  z-index: 3;
+}
+
+.device-secondary {
+  width: 65%;
+  bottom: 15px;
+  left: 0;
+  z-index: 2;
 }

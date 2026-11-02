@@ -1,5 +1,31 @@
 import './App.css';
 
+function HeroVisual() {
+  return (
+    <div className="hero-visual">
+
+      <div className="device device-main">
+        <div className="device-screen">
+          <img
+            src="/images/app_1.webp"
+            alt="Know My Number app"
+          />
+        </div>
+      </div>
+
+      <div className="device device-secondary">
+        <div className="device-screen">
+          <img
+            src="/images/app_2.webp"
+            alt="Blue Pencil app"
+          />
+        </div>
+      </div>
+
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="portfolio">
@@ -21,7 +47,7 @@ function App() {
             <a href="#projects">Projects</a>
           </nav>
 
-          <a href="#contact" className="contact-button">
+          <a href="#contact" className="contact-button-header">
             Let's Talk <span>↗</span>
           </a>
 
@@ -78,14 +104,14 @@ function App() {
 
           </div>
 
-          <div className="hero-decoration">
+          {/* <div className="hero-decoration">
             <div className="decoration-card">
               <span className="decoration-number">01</span>
               <div className="decoration-line"></div>
               <p>Turning ideas into meaningful applications.</p>
               <span className="decoration-symbol">&lt;/&gt;</span>
             </div>
-          </div>
+          </div> */}
 
 
           {/* <div className="hero-decoration">
@@ -118,6 +144,8 @@ function App() {
 
             </div>
           </div> */}
+
+          <HeroVisual />
 
         </section>
 
