@@ -1,30 +1,56 @@
 import './App.css';
 
+
 function HeroVisual() {
   return (
     <div className="hero-visual">
+      <div className="visual-orbit orbit-one"></div>
+      <div className="visual-orbit orbit-two"></div>
 
-      <div className="device device-main">
-        <div className="device-screen">
-          <img
-            src="/images/app_1.webp"
-            alt="Know My Number app"
-          />
+      <div className="visual-main-card">
+        <div className="visual-card-header">
+          <div className="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span>app.kt</span>
+        </div>
+
+        <div className="code-content">
+          <div><span className="code-purple">class</span> <span className="code-blue">MyApp</span> {`{`}</div>
+          <div className="code-indent">
+            <span className="code-purple">fun</span> <span className="code-blue">create</span>() {`{`}
+          </div>
+          <div className="code-indent code-indent-two">
+            <span className="code-green">"Ideas"</span>
+          </div>
+          <div className="code-indent">{`}`}</div>
+          <div>{`}`}</div>
+        </div>
+
+        <div className="visual-card-footer">
+          <span className="footer-dot"></span>
+          Building something meaningful
         </div>
       </div>
 
-      <div className="device device-secondary">
-        <div className="device-screen">
-          <img
-            src="/images/app_2.webp"
-            alt="Blue Pencil app"
-          />
+      <div className="visual-ui-card">
+        <div className="ui-card-top">
+          <span></span>
+          <span></span>
         </div>
+        <div className="ui-card-line"></div>
+        <div className="ui-card-line short"></div>
+        <div className="ui-card-button"></div>
       </div>
 
+      <div className="visual-code-symbol">&lt;/&gt;</div>
+      <div className="visual-plus">+</div>
     </div>
   );
 }
+
 
 function App() {
   return (
@@ -145,7 +171,7 @@ function App() {
             </div>
           </div> */}
 
-          <HeroVisual />
+        <HeroVisual />
 
         </section>
 
