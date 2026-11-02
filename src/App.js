@@ -1,4 +1,5 @@
 import './App.css';
+import content from "./content";
 
 
 function HeroVisual() {
@@ -60,27 +61,28 @@ function App() {
       <header className="header">
         <div className="container nav-container">
 
-          <a href="#home" className="logo">
-            Sara<span>.</span>
+          <a href="#home" className="logo">{content.navigation.logo}
+            <span>.</span>
           </a>
 
           <nav className="nav-menu">
-            <a href="#home" className="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
+            <a href="#home" className="active">{content.navigation.home}</a>
+            <a href="#about">{content.navigation.about}</a>
+            <a href="#skills">{content.navigation.skills}</a>
+            <a href="#experience">{content.navigation.experience}</a>
+            <a href="#projects">{content.navigation.projects}</a>
+            <a href="#education">{content.navigation.education}</a>
+            {/* <a href="#publications">{content.navigation.publications}</a> */}
+            {/* <a href="#contact">{content.navigation.contact}</a> */}
           </nav>
 
           <a href="#contact" className="contact-button-header">
-            Let's Talk <span>↗</span>
+            {content.navigation.contact} <span>↗</span>
           </a>
 
         </div>
       </header>
 
-      
       <main>
         {/* Hero Section */}
         <section className="hero container" id="home">
@@ -92,16 +94,14 @@ function App() {
               AVAILABLE FOR OPPORTUNITIES
             </div>
 
-            <p className="hero-greeting">Hello, I'm Sara</p>
+            <p className="hero-greeting">{content.hero.greeting}</p>
 
             <h1>
-              Android Developer<span>.</span>
+              {content.hero.title}<span>.</span>
             </h1>
 
             <p className="hero-description">
-              I build thoughtful, user-friendly Android applications
-              with Kotlin. I love turning creative ideas into useful
-              digital experiences.
+              {content.hero.description}
             </p>
 
             <div className="hero-actions">
