@@ -91,7 +91,7 @@ function App() {
 
             <div className="hero-label">
               <span className="status-dot"></span>
-              AVAILABLE FOR OPPORTUNITIES
+              {content.hero.label}
             </div>
 
             <p className="hero-greeting">{content.hero.greeting}</p>
@@ -106,24 +106,24 @@ function App() {
 
             <div className="hero-actions">
               <a href="#projects" className="primary-button">
-                Explore My Work <span>→</span>
+                {content.hero.actions} <span>→</span>
               </a>
 
               <a href="#contact" className="secondary-button">
-                Get In Touch
+                {content.hero.contact}
               </a>
 
               <a href="/Sara-CV.pdf" className="secondary-button" download>
-                Download CV <span>↓</span>
+                 {content.hero.CV} <span>↓</span>
               </a>
 
             </div>
 
             <div className="hero-social">
-              <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <a href="https://github.com/sasemanmanzar" target="_blank" rel="noreferrer">
                 GitHub ↗
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
+              <a href="https://linkedin.com/in/sara-asemanmanzar" target="_blank" rel="noreferrer">
                 LinkedIn ↗
               </a>
             </div>
@@ -171,7 +171,7 @@ function App() {
             </div>
           </div> */}
 
-        <HeroVisual />
+          {/* <HeroVisual /> */}
 
         </section>
 
@@ -180,14 +180,14 @@ function App() {
           <div className="container about-container">
 
             <div className="about-heading">
-              <span className="section-label">02 / ABOUT ME</span>
+              <span className="section-label">{content.about.label}</span>
 
               <h2>
-                A little about me<span>.</span>
+                {content.about.heading}<span>.</span>
               </h2>
 
               <p>
-                Every great application starts with an idea.
+                {content.about.headingText}
               </p>
             </div>
 
@@ -195,41 +195,43 @@ function App() {
 
               <div className="about-text">
                 <h3>
-                  Creating meaningful digital experiences.
+                  {content.about.content1}
                 </h3>
 
                 <p>
-                  I'm an independent Android developer passionate
-                  about building useful, creative and user-friendly
-                  mobile applications.
+                  {content.about.content2}
                 </p>
 
                 <p>
-                  I enjoy turning ideas into real products,
-                  exploring new technologies and paying attention
-                  to the little details that make an application
-                  enjoyable to use.
+                  {content.about.content3}
                 </p>
               </div>
 
               <div className="about-cards">
 
                 <div className="about-card">
-                  <span className="about-icon">⌨</span>
-                  <h4>Kotlin</h4>
-                  <p>Android Development</p>
+                  {/* <span className="about-icon">⌨</span> */}
+                  {/* <span className="about-icon">&lt;/&gt;</span> */}
+                  <span className="about-icon" style={{ fontSize: "18px" }}>&lt;/&gt;</span>
+                  <h4>{content.about.card1_title}</h4>
+                  <p>{content.about.card1_content}</p>
                 </div>
 
                 <div className="about-card">
-                  <span className="about-icon">▣</span>
-                  <h4>Android</h4>
-                  <p>Mobile Applications</p>
+                  {/* <span className="about-icon">▣</span> */}
+                  {/* <span className="about-icon">✧</span> */}
+                  <span className="about-icon">✎</span>
+                  <h4>{content.about.card2_title}</h4>
+                  <p>{content.about.card2_content}</p>
                 </div>
 
                 <div className="about-card">
-                  <span className="about-icon">✦</span>
-                  <h4>Creative</h4>
-                  <p>Problem Solving</p>
+                  {/* <span className="about-icon">✦</span> */}
+                  {/* <span className="about-icon">⚙</span> */}
+                  {/* <span className="about-icon">⇄</span> */}
+                  <span className="about-icon">⛓</span>
+                  <h4>{content.about.card3_title}</h4>
+                  <p>{content.about.card3_content}</p>
                 </div>
 
               </div>
