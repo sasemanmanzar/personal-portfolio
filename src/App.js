@@ -377,14 +377,14 @@ function App() {
           <div className="container experience-container">
 
             <div className="experience-heading">
-              <span className="section-label">04 / EXPERIENCE</span>
+              <span className="section-label">{content.experience.label}</span>
 
               <h2>
-                Experience<span>.</span>
+                {content.experience.heading}<span>.</span>
               </h2>
 
               <p>
-                My experience building Android applications and web projects.
+                {content.experience.headingText}
                 {/* My journey in designing, developing, and publishing Android applications.               */}
               </p>
             </div>
@@ -472,18 +472,20 @@ function App() {
         <section className="projects-section" id="projects">
           <div className="container projects-container">
 
-            <div className="section-heading">
-              <span className="section-label">05 / MY PROJECTS</span>
-              <h2>Things I've built.</h2>
-              <p>A selection of my independent Android applications.</p>
+            <div className="projects-heading">
+              <span className="section-label">{content.projects.label}</span>
+              <h2>{content.projects.heading}<span>.</span></h2>
+              <p>{content.projects.headingText}</p>
             </div>
 
             <div className="projects-grid">
 
+              {/* ‌Bule Pencil Project */}
               <article className="project-card">
                 <div className="project-visual blue-pencil-visual">
-                  <span className="project-symbol">🎨</span>
-                  <span className="project-category">CREATIVE APP</span>
+                  {/* <span className="project-symbol">🎨</span> */}
+                  <img src="/images/icon_bluepencil.webp" alt="Blue Pencil app icon" className="project-app-icon"/>
+                  <span className="project-category">KIDS COLORING APP</span>
                 </div>
 
                 <div className="project-info">
@@ -501,6 +503,7 @@ function App() {
                   <div className="project-tags">
                     <span>Java</span>
                     <span>Android</span>
+                    <span>Firebase</span>
                     <span>In-App Purchases</span>
                   </div>
 
@@ -508,19 +511,37 @@ function App() {
                     <strong>4,000+</strong>
                     <span>Installs</span>
                   </div>
+
+                  <div className="project-links">
+                    <a href="https://cafebazaar.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                      View on Bazaar ↗
+                    </a>
+
+                    {/* <a href="https://myket.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                      View on Myket ↗
+                    </a> */}
+
+                    <a href="/downloads/blue-pencil.apk" download>
+                      Download APK ↓
+                    </a>
+
+                  </div>
+
                 </div>
               </article>
 
+              {/* Know My Number Project */}
               <article className="project-card">
                 <div className="project-visual number-visual">
-                  <span className="project-symbol">📞</span>
-                  <span className="project-category">EDUCATIONAL GAME</span>
+                  {/* <span className="project-symbol">📞</span> */}
+                  <img src="/images/icon_knowmynumber.webp" alt="Know My Number app icon" className="project-app-icon"/>
+                  <span className="project-category">EDUCATIONAL KIDS GAME</span>
                 </div>
 
                 <div className="project-info">
                   <div className="project-title-row">
                     <h3>Know My Number</h3>
-                    <span className="project-status">ANDROID APP</span>
+                    <span className="project-status">PUBLISHED</span>
                   </div>
 
                   <p>
@@ -535,6 +556,22 @@ function App() {
                     <span>Firebase</span>
                     <span>In-App Purchases</span>
                   </div>
+
+                  <div className="project-links">
+                    <a href="https://cafebazaar.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                      View on Bazaar ↗
+                    </a>
+
+                    <a href="https://myket.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                      View on Myket ↗
+                    </a>
+
+                    <a href="/downloads/blue-pencil.apk" download>
+                      Download APK ↓
+                    </a>
+
+                  </div>
+
                 </div>
               </article>
 

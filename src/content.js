@@ -51,6 +51,18 @@ const content = {
 
   },
 
+  experience: {
+    label:"04 / EXPERIENCE",
+    heading:"Experience",
+    headingText:"My experience building Android applications and web projects."
+  },
+
+  projects:{
+    label:"05 / MY PROJECTS",
+    heading:"Things I've built",
+    headingText:"A selection of Android applications I've independently developed and published."
+  },
+
 
 };
 
