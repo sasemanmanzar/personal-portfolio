@@ -380,11 +380,12 @@ function App() {
               <span className="section-label">04 / EXPERIENCE</span>
 
               <h2>
-                My Journey<span>.</span>
+                Experience<span>.</span>
               </h2>
 
               <p>
-                My experience in building mobile applications.
+                My experience building Android applications and web projects.
+                {/* My journey in designing, developing, and publishing Android applications.               */}
               </p>
             </div>
 
@@ -398,35 +399,46 @@ function App() {
 
                   <div className="experience-top">
                     <span className="experience-badge">
-                      PERSONAL PROJECT
+                      INDEPENDENT DEVELOPMENT
                     </span>
 
                     <span className="experience-type">
-                      Independent Work
+                      2019 – Present
                     </span>
                   </div>
 
-                  <h3>Independent Android Developer</h3>
+                  <h3>Independent Software Developer</h3>
 
                   <p className="experience-tech">
-                    Kotlin · Android Studio · Firebase
+                    Kotlin · Java · Android Studio · React · Firebase
                   </p>
 
                   <p className="experience-description">
-                    Designed and developed an educational Android
-                    application from concept to implementation,
-                    focused on helping young children learn phone
-                    numbers through interactive games.
+                    Independently developed Android applications and web projects, taking ideas from initial design through implementation and release.
                   </p>
 
                   <ul className="experience-list">
                     <li>
-                      Developed Android applications using Kotlin.
+                      Developed Android applications using Java and Kotlin.
                     </li>
 
                     <li>
-                      Designed interactive and child-friendly interfaces.
+                      Built responsive web applications using React.
                     </li>
+
+                    <li>
+                      Designed user interfaces and implemented interactive features across mobile and web platforms.
+                    </li>
+
+                    <li>
+                      Integrated Firebase services, in-app purchases and rewarded advertisements.
+                    </li>
+
+                    <li>
+                      Managed application development, testing and publishing.
+                    </li>
+
+                    {/* 
 
                     <li>
                       Implemented in-app purchases and reward systems.
@@ -438,13 +450,14 @@ function App() {
 
                     <li>
                       Worked with different Android markets and billing systems.
-                    </li>
+                    </li> */}
                   </ul>
 
-                  <div className="experience-project">
+                  {/* <div className="experience-project">
                     <span>Featured Project</span>
                     <strong>Know My Number</strong>
-                  </div>
+                    <strong>Blue Pencil</strong>
+                  </div> */}
 
                 </div>
 
@@ -544,36 +557,36 @@ function App() {
               {/* Master's Degree */}
               <article className="education-card">
                 <div className="education-date">
-                  20XX – 20XX
+                  2013 – 2015
                 </div>
 
                 <div className="education-details">
                   <span className="education-level">MASTER'S DEGREE</span>
                   <h3>Master of Science in Information Technology Engineering</h3>
-                  <h4>K. N. Toosi University of Technology</h4>
-                  <p>Tehran, Iran</p>
-                  <div className="thesis-info">
+                  <h4>Taali Higher Education Information Technology Institute</h4>
+                  <p>Gom, Iran</p>
+                  {/* <div className="thesis-info">
                     <span>Master's Thesis</span>
                     <p>Data Mining</p>
-                  </div>
+                  </div> */}
                 </div>
               </article>
 
               {/* Bachelor's Degree */}
               <article className="education-card">
                 <div className="education-date">
-                  20XX – 20XX
+                  2008 – 2012
                 </div>
 
                 <div className="education-details">
                   <span className="education-level">BACHELOR'S DEGREE</span>
-                  <h3>[Your Bachelor's Degree]</h3>
-                  <h4>[Your University Name]</h4>
-                  <p>[City, Country]</p>
-                  <div className="thesis-info">
+                  <h3>Bachelor of Science in Information Technology Engineering</h3>
+                  <h4>K. N. Toosi University of Technology</h4>
+                  <p>Tehran, Iran</p>
+                  {/* <div className="thesis-info">
                     <span>Bachelor's Thesis</span>
                     <p>Smart Schools</p>
-                  </div>
+                  </div> */}
                 </div>
               </article>
 
@@ -630,8 +643,6 @@ function App() {
           </div>
         </section>
 
-
-
       </main>
 
 
@@ -645,14 +656,21 @@ function App() {
         <p>Designed & Built with care by Sara.</p>
 
         <div className="footer-links">
-          <a href="#home">Home</a>
+          {/* <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contact</a> */}
+
+          <a href="#home">{content.navigation.home}</a>
+          <a href="#about">{content.navigation.about}</a>
+          <a href="#skills">{content.navigation.skills}</a>
+          <a href="#experience">{content.navigation.experience}</a>
+          <a href="#projects">{content.navigation.projects}</a>
+          <a href="#education">{content.navigation.education}</a>
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Sara. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Sara Aseman-Manzar. All rights reserved.</span>
           <a href="#home">Back to top ↑</a>
         </div>
 
