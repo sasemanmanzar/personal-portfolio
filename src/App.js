@@ -246,19 +246,20 @@ function App() {
           <div className="container skills-container">
 
             <div className="skills-heading">
-              <span className="section-label">03 / MY SKILLS</span>
+              <span className="section-label">{content.skill.label}</span>
 
               <h2>
-                What I work with<span>.</span>
+                {content.skill.heading1}<span>.</span>
               </h2>
 
               <p>
-                Technologies and tools I use to bring ideas to life.
+                {content.skill.heading2}
               </p>
             </div>
 
             <div className="skills-grid">
 
+              {/* Android Development */}
               <div className="skill-box">
                 <div className="skill-title">
                   <span className="skill-icon">⌘</span>
@@ -267,28 +268,68 @@ function App() {
 
                 <div className="skill-tags">
                   <span>Kotlin</span>
+                  <span>Java</span>
                   <span>Android SDK</span>
-                  <span>XML</span>
-                  <span>Jetpack</span>
-                  <span>Material Design</span>
+                  {/* <span>Android Jetpack(DataStore, Lifecycle)</span> */}
+                  <span>Android Jetpack</span>
+                  {/* <span>Android XML Layouts</span> */}
+                  <span>XML Layouts</span>
+                  <span>Kotlin Coroutines</span>
+                  <span>Firebase Analytics</span>
+                  <span>In-App Billing & Ads Integration</span>
                 </div>
               </div>
 
+              {/* Web Development */}
+              <div className="skill-box">
+                <div className="skill-title">
+                  <span className="skill-icon">✦</span>
+                  <h3>Web Development</h3>
+                </div>
+
+                <div className="skill-tags">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Responsive Web Design</span>
+                </div>
+              </div>
+
+              {/* Libraries & Technologies */}
+              {/* <div className="skill-box">
+                <div className="skill-title">
+                  <span className="skill-icon">✦</span>
+                  <h3>Libraries & Technologies</h3>
+                </div>
+
+                <div className="skill-tags">
+                  <span>DataStore</span>
+                  <span>Coroutines</span>
+                  <span>Firebase Analytics</span>
+                  <span>Gradle</span>
+                  <span>MediaPlayer</span>
+                  <span>SoundPool</span>
+                </div>
+              </div> */}
+
+              {/* Development & Design Tools */}
               <div className="skill-box">
                 <div className="skill-title">
                   <span className="skill-icon">⚙</span>
-                  <h3>Development Tools</h3>
+                  <h3>Development & Design Tools</h3>
                 </div>
 
                 <div className="skill-tags">
                   <span>Android Studio</span>
-                  <span>Git</span>
-                  <span>GitHub</span>
-                  <span>Gradle</span>
+                  <span>Visual Studio Code</span>
+                  <span>Git & GitHub</span>
+                  <span>Photopea</span>
                 </div>
               </div>
 
-              <div className="skill-box">
+              {/* Backend & Services */}
+              {/* <div className="skill-box">
                 <div className="skill-title">
                   <span className="skill-icon">☁</span>
                   <h3>Backend & Services</h3>
@@ -300,19 +341,29 @@ function App() {
                   <span>JSON</span>
                   <span>DataStore</span>
                 </div>
-              </div>
+              </div> */}
 
+              {/* Design & Creative Development */}
+              {/* Other Skills */}
+              {/* UI & Game Development */}
               <div className="skill-box">
                 <div className="skill-title">
-                  <span className="skill-icon">✦</span>
-                  <h3>Other Skills</h3>
+                  <span className="skill-icon">⚙</span>
+                  <h3>UI & Game Development</h3>
                 </div>
 
                 <div className="skill-tags">
                   <span>UI Design</span>
-                  <span>Debugging</span>
-                  <span>Problem Solving</span>
-                  <span>Responsive UI</span>
+                  <span>Game Logic</span>
+                  {/* <span>UI & Interaction Design</span> */}
+                  <span>Interaction Design</span>
+                  {/* <span>Debugging</span> */}
+                  {/* <span>Problem Solving</span> */}
+                  {/* <span>Responsive UI</span> */}
+                  {/* <span>UI Animations</span> */}
+                  {/* <span>Audio Integration</span> */}
+                  {/* <span>Graphic Editing</span> */}
+                  {/* <span>Interaction & Animation Design</span> */}
                 </div>
               </div>
 

@@ -44,6 +44,13 @@ const content = {
 
   },
 
+  skill: {
+    label:"03 / MY SKILLS",
+    heading1:"What I work with",
+    heading2:"Technologies and tools I use to bring ideas to life.",
+
+  },
+
 
 };
 
