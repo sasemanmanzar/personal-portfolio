@@ -584,7 +584,7 @@ function App() {
           <div className="container education-container">
 
             <div className="education-heading">
-              <span className="section-label">05 / EDUCATION</span>
+              <span className="section-label">06 / EDUCATION</span>
               <h2>My Education.</h2>
               <p>My academic background and educational journey.</p>
             </div>
