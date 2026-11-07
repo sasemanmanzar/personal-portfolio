@@ -580,7 +580,7 @@ function App() {
                       View on Myket ↗
                     </a>
 
-                    <a href="/downloads/blue-pencil.apk" download>
+                    <a href="/downloads/know-my-number.apk" download>
                       Download APK ↓
                     </a>
 
