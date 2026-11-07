@@ -87,8 +87,13 @@ input {
   --card-gradient-end: #E1EDFC;
 
   /* Project colors */
-  --number-project-background: #F4F7FC;
-  --bluepencil-project-background: #F4F7FC;
+  --number-project-background: #E6F5F5;
+  --bluepencil-project-background: #EFF6FF;
+  /* #F4F7FC */
+  /* E6F5F5 */
+  /* FFF9EC */
+  /* EFF6FF */
+  /* var(--secondary-color) */
 
   /* Border colors */
   --border-color: #E2EAF3;

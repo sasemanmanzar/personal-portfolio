@@ -830,13 +830,15 @@
 
 .education-details h3 {
   color: var(--text-color);
-  font-size: 19px;
+  /* font-size: 19px; */
+  font-size: 17px;
   margin: 10px 0;
 }
 
 .education-details h4 {
   color: var(--soft-text);
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: 13px;
   font-weight: 600;
 }
 

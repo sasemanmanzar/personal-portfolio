@@ -1,6 +1,16 @@
 import './App.css';
 import content from "./content";
 
+import codeIcon from "./assets/icons/code.svg";
+import favoriteIcon from "./assets/icons/favorite.svg";
+import hubIcon from "./assets/icons/hub.svg";
+import androidIcon from "./assets/icons/android.svg";
+import webIcon from "./assets/icons/web.svg";
+import handymanIcon from "./assets/icons/handyman.svg";
+import dashboardCustomizeIcon from "./assets/icons/dashboard_customize.svg";
+import callIcon from "./assets/icons/call.svg";
+import paletteIcon from "./assets/icons/palette.svg";
+
 
 function HeroVisual() {
   return (
@@ -212,7 +222,8 @@ function App() {
                 <div className="about-card">
                   {/* <span className="about-icon">⌨</span> */}
                   {/* <span className="about-icon">&lt;/&gt;</span> */}
-                  <span className="about-icon" style={{ fontSize: "18px" }}>&lt;/&gt;</span>
+                  {/* <span className="about-icon" style={{ fontSize: "18px" }}>&lt;/&gt;</span> */}
+                  <span className="about-icon"><img src={codeIcon} alt="" /></span>
                   <h4>{content.about.card1_title}</h4>
                   <p>{content.about.card1_content}</p>
                 </div>
@@ -220,7 +231,8 @@ function App() {
                 <div className="about-card">
                   {/* <span className="about-icon">▣</span> */}
                   {/* <span className="about-icon">✧</span> */}
-                  <span className="about-icon">✎</span>
+                  {/* <span className="about-icon">✎</span> */}
+                  <span className="about-icon"><img src={favoriteIcon} alt="" /></span>
                   <h4>{content.about.card2_title}</h4>
                   <p>{content.about.card2_content}</p>
                 </div>
@@ -229,7 +241,8 @@ function App() {
                   {/* <span className="about-icon">✦</span> */}
                   {/* <span className="about-icon">⚙</span> */}
                   {/* <span className="about-icon">⇄</span> */}
-                  <span className="about-icon">⛓</span>
+                  {/* <span className="about-icon">⛓</span> */}
+                  <span className="about-icon"><img src={hubIcon} alt="" /></span>
                   <h4>{content.about.card3_title}</h4>
                   <p>{content.about.card3_content}</p>
                 </div>
@@ -262,7 +275,7 @@ function App() {
               {/* Android Development */}
               <div className="skill-box">
                 <div className="skill-title">
-                  <span className="skill-icon">⌘</span>
+                  <span className="skill-icon"><img src={androidIcon} alt="" /></span>
                   <h3>Android Development</h3>
                 </div>
 
@@ -283,7 +296,7 @@ function App() {
               {/* Web Development */}
               <div className="skill-box">
                 <div className="skill-title">
-                  <span className="skill-icon">✦</span>
+                  <span className="skill-icon"><img src={webIcon} alt="" /></span>
                   <h3>Web Development</h3>
                 </div>
 
@@ -316,7 +329,7 @@ function App() {
               {/* Development & Design Tools */}
               <div className="skill-box">
                 <div className="skill-title">
-                  <span className="skill-icon">⚙</span>
+                  <span className="skill-icon"><img src={handymanIcon} alt="" /></span>
                   <h3>Development & Design Tools</h3>
                 </div>
 
@@ -348,7 +361,7 @@ function App() {
               {/* UI & Game Development */}
               <div className="skill-box">
                 <div className="skill-title">
-                  <span className="skill-icon">⚙</span>
+                  <span className="skill-icon"><img src={dashboardCustomizeIcon} alt="" /></span>
                   <h3>UI & Game Development</h3>
                 </div>
 
@@ -484,6 +497,7 @@ function App() {
               <article className="project-card">
                 <div className="project-visual blue-pencil-visual">
                   {/* <span className="project-symbol">🎨</span> */}
+                  {/* <span className="project-symbol"><img src={paletteIcon} alt="" /></span> */}
                   <img src="/images/icon_bluepencil.webp" alt="Blue Pencil app icon" className="project-app-icon"/>
                   <span className="project-category">KIDS COLORING APP</span>
                 </div>
@@ -612,7 +626,7 @@ function App() {
               {/* Bachelor's Degree */}
               <article className="education-card">
                 <div className="education-date">
-                  2008 – 2012
+                  2007 - 2012
                 </div>
 
                 <div className="education-details">
