@@ -646,33 +646,6 @@ function App() {
         </section>
 
         {/* Publications Section */}
-        {/* <section className="publications-section" id="publications">
-          <div className="container publications-container">
-
-            <div>
-              <span className="section-label">RESEARCH</span>
-              <h2>Publications</h2>
-            </div>
-
-            <div className="publications-content">
-              <h3>8 Research Papers</h3>
-              <p>
-                Research contributions in Computer Science
-                and Software Engineering.
-              </p>
-
-              <a
-                href="YOUR_PUBLICATIONS_LINK"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View all publications <span>↗</span>
-              </a>
-            </div>
-
-          </div>
-        </section> */}
-
         <section className="publications-section" id="publications">
           <div className="container">
 
@@ -691,7 +664,7 @@ function App() {
               {content.publications.map((paper, index) => (
                 <article className="publication-item" key={index}>
 
-                  <span className="publication-number">✦
+                  <span className="publication-number" style={{ fontSize: "16px" }}>✦
                     {/* {String(index + 1).padStart(2, "0")} */}
                   </span>
 
