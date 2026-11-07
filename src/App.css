@@ -1096,8 +1096,66 @@
 /* Contact Section */
 
 .contact-section {
+  padding: 100px 0;
+  background: var(--section-background);
+  text-align: left;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  color: var(--primary-color);
+  font-size: 36px;
+  margin: 18px 0 14px;
+}
+
+.contact-section p {
+  color: var(--muted-color);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 0 28px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--secondary-color);
+  color: var(--background-color);
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background: var(--accent-color);
+  transform: translateY(-3px);
+}
+
+.contact-button span {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 75px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 30px;
+  }
+}
+
+/* .contact-section {
   padding: 110px 20px;
-  background: var(--background-color);
+  background: var(--section-background);
   text-align: center;
 }
 
@@ -1150,13 +1208,13 @@
   .contact-section h2 {
     font-size: 32px;
   }
-}
+} */
 
 
 /* Footer */
 
 .footer {
-  background: var(--section-background);
+  background: var(--background-color);
   border-top: 1px solid var(--border-color);
   padding: 45px 20px 25px;
 }
@@ -1236,8 +1294,150 @@
 /* publications-section */
 
 .publications-section {
-  padding: 90px 0;
+  padding: 100px 0;
+  background: var(--background-color);
+}
+
+.publications-heading {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: flex-end; */
+  /* gap: 30px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 45px;
+}
+
+.publications-heading h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-top: 14px;
+}
+
+.publications-heading p {
+  /* max-width: 340px; */
+  max-width: none;
+  color: var(--muted-color);
+  font-size: 14px;
+  line-height: 1.8;
+  /* margin-bottom: 5px; */
+  margin: 0;
+}
+
+.publications-list {
+  border-top: 1px solid var(--border-color);
+}
+
+.publication-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 36px;
+  gap: 20px;
+  align-items: start;
+  padding: 27px 15px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background 0.25s ease;
+}
+
+.publication-item:hover {
+  /* background: rgba(255, 255, 255, 0.65); */
   background: var(--section-background);
+}
+
+.publication-number {
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 3px;
+}
+
+.publication-details h3 {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+  margin: 0 0 10px;
+}
+
+.publication-authors {
+  color: var(--muted-color);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.publication-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  color: var(--soft-text);
+  font-size: 12px;
+}
+
+.publication-year {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.publication-link {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.25s ease;
+}
+
+.publication-link:hover {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .publications-section {
+    padding: 75px 0;
+  }
+
+  .publications-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .publications-heading h2 {
+    font-size: 30px;
+  }
+
+  .publication-item {
+    grid-template-columns: 28px minmax(0, 1fr) 30px;
+    gap: 10px;
+    padding: 22px 5px;
+  }
+
+  .publication-details h3 {
+    font-size: 14px;
+  }
+
+  .publication-authors {
+    font-size: 12px;
+  }
+
+  .publication-meta {
+    font-size: 11px;
+  }
+}
+
+/* .publications-section {
+  padding: 90px 0;
+  background: var(--background-color);
 }
 
 .publications-container {
@@ -1275,7 +1475,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-}
+} */
 
 
 /* Hero App Showcase */

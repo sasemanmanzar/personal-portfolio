@@ -181,7 +181,7 @@ function App() {
             </div>
           </div> */}
 
-          {/* <HeroVisual /> */}
+          <HeroVisual />
 
         </section>
 
@@ -646,7 +646,7 @@ function App() {
         </section>
 
         {/* Publications Section */}
-        <section className="publications-section" id="publications">
+        {/* <section className="publications-section" id="publications">
           <div className="container publications-container">
 
             <div>
@@ -671,22 +671,77 @@ function App() {
             </div>
 
           </div>
+        </section> */}
+
+        <section className="publications-section" id="publications">
+          <div className="container">
+
+            <div className="publications-heading">
+              <div>
+                <span className="section-label">{content.publication.label}</span>
+                <h2>{content.publication.heading}</h2>
+              </div>
+
+              <p>
+                {content.publication.headingText}
+              </p>
+            </div>
+
+            <div className="publications-list">
+              {content.publications.map((paper, index) => (
+                <article className="publication-item" key={index}>
+
+                  <span className="publication-number">✦
+                    {/* {String(index + 1).padStart(2, "0")} */}
+                  </span>
+
+                  <div className="publication-details">
+
+                    <h3>{paper.title}</h3>
+
+                    <p className="publication-authors">
+                      {paper.authors}
+                    </p>
+
+                    <div className="publication-meta">
+                      <span>{paper.venue}</span>
+                      <span className="publication-year">{paper.year}</span>
+                    </div>
+
+                  </div>
+
+                  {paper.link && (
+                    <a
+                      href={paper.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="publication-link"
+                      aria-label={`Read ${paper.title}`}
+                    >
+                      ↗
+                    </a>
+                  )}
+
+                </article>
+              ))}
+            </div>
+
+          </div>
         </section>
 
         {/* Contact Section */}
         <section className="contact-section" id="contact">
           <div className="container contact-container">
-            <span className="section-label">06 / GET IN TOUCH</span>
+            <span className="section-label">{content.contact.label}</span>
 
-            <h2>Let's work together.</h2>
+            <h2>{content.contact.heading}</h2>
 
             <p>
-              Have a project in mind or just want to say hello?
-              I'd love to hear from you.
+              {content.contact.headingText}
             </p>
 
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:s.asemanmanzar@gmail.com"
               className="contact-button"
             >
               Say Hello <span>↗</span>
@@ -704,7 +759,8 @@ function App() {
           Sara<span>.</span>
         </a>
 
-        <p>Designed & Built with care by Sara.</p>
+        {/* <p>Designed & Built with care by Sara.</p> */}
+        <p>Designed & developed by Sara Aseman-Manzar.</p>
 
         <div className="footer-links">
           {/* <a href="#home">Home</a>
@@ -718,6 +774,8 @@ function App() {
           <a href="#experience">{content.navigation.experience}</a>
           <a href="#projects">{content.navigation.projects}</a>
           <a href="#education">{content.navigation.education}</a>
+          <a href="#publications">{content.navigation.publications}</a>
+          
         </div>
 
         <div className="footer-bottom">

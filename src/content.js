@@ -63,6 +63,79 @@ const content = {
     headingText:"A selection of Android applications I've independently developed and published."
   },
 
+  publications: [
+  {
+    title: "Designing a Platform to Analyze Games’ Users’ Data and Classification of Essential Metrics (in Persian)",
+    authors: "Mohammad-Mohsen Aseman-Manzar, Sara Aseman-Manzar, Behrooz Minaei",
+    venue: "1st Digital Games Research Conference (DGRC)",
+    year: "26 Feb 2018",
+    link: " https://civilica.com/doc/696919",
+  },
+  {
+    title: "Analysis Data Mining Process and Classification Solutions for Solving Problems in Data Per-Process Step (in Persian)",
+    authors: "Sara Aseman-manzar",
+    venue: "International Conference on Research in Engineering, Science and Technology",
+    year: "21 July 2015, Istanbul, Turkey",
+    link: "https://civilica.com/doc/398506",
+  },
+  {
+    title: "Expression and Extraction Security Requirements are using the Best Methods (in Persian)",
+    authors: "Sara Aseman-manzar , Mohadese Ghomashi",
+    venue: "National e-Conference on Advances in Basic Sciences and Engineering",
+    year: "Nov. 21, 2015",
+    link: "https://civilica.com/doc/304119",
+  },
+  {
+    title: "Introducing the most Effective Principles of Software Testing and evaluating the Logical Coverage Criteria for Seasonal Normal Functions (in Persian)",
+    authors: "Mohadese Ghomashi , Sara Aseman-manzar",
+    venue: "The Second National Conference on New Technologies in Electrical and Computer Engineering",
+    year: "Mar. 8, 2015",
+    link: "https://civilica.com/doc/337696",
+  },
+  {
+    title: "Classification of Data Pre-Processing Solutions in Data Mining and Knowledge Discovery (in Persian)",
+    authors: "Sara Aseman-manzar , Somaye Faghih-Mirzaie, Reza Ahsan, Abdol-Hamid Salman-Khaksar",
+    venue: "7th Iranian & 1st International Knowledge Management Conference",
+    year: "Feb. 17-18, 2015",
+    link: "https://civilica.com/doc/481328",
+  },
+  {
+    title: "Successful Implement of Requirements Engineering with the Best Available Tools then Comparing and evaluating them with Existing Criteria (in Persian)",
+    authors: "Mohadese Ghomashi , Sara Aseman-manzar",
+    venue: "National e-Conference on Advances in Basic Sciences and Engineering",
+    year: "Oct. 28, 2014",
+    link: "https://civilica.com/doc/304021",
+  },
+  {
+    title: "Analysis and Improving the Software Testing Process based on the Mutation Test (in Persian)",
+    authors: "Sara Aseman-manzar, Mohadese Ghomashi",
+    venue: "The First National Conference on Meta-Heuristic Algorithms and their Applications in Science and Engineering",
+    year: "Aug. 7, 2014",
+    link: "",
+  },
+  {
+    title: "Customer Relationship Management and its Implementation of an Organization (in Persian)",
+    authors: "Sara Aseman-manzar",
+    venue: "National e-Conference on Advances in Basic Sciences and Engineering",
+    year: "30 Jul 2014",
+    link: "https://civilica.com/doc/304120",
+  },
+],
+
+  publication:{
+    label:"07 / RESEARCH",
+    heading:"Publications",
+    headingText:"Research contributions in Computer Science and Software Engineering."
+  },
+
+  
+
+  contact:{
+    label:"08 / GET IN TOUCH",
+    heading:"Let's work together.",
+    headingText:"Have a project in mind or just want to say hello? I'd love to hear from you."
+  },
+
 
 };
 
