@@ -527,7 +527,7 @@ function App() {
                   </div>
 
                   <div className="project-links">
-                    <a href="https://cafebazaar.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                    <a href="https://cafebazaar.ir/app/com.example.BluePencil?l=en" target="_blank" rel="noreferrer">
                       View on Bazaar ↗
                     </a>
 
@@ -572,11 +572,11 @@ function App() {
                   </div>
 
                   <div className="project-links">
-                    <a href="https://cafebazaar.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                    <a href="https://cafebazaar.ir/app/com.asemanmanzar.memorizingphonenumbers?l=en" target="_blank" rel="noreferrer">
                       View on Bazaar ↗
                     </a>
 
-                    <a href="https://myket.ir/app/your-app-id" target="_blank" rel="noreferrer">
+                    <a href="https://myket.ir/app/com.asemanmanzar.memorizingphonenumbers" target="_blank" rel="noreferrer">
                       View on Myket ↗
                     </a>
 
