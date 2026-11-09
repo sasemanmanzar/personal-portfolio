@@ -123,7 +123,7 @@ function App() {
                 {content.hero.contact}
               </a>
 
-              <a href="/Sara-CV.pdf" className="secondary-button" download>
+              <a href="/downloads/Sara_CV.pdf" className="secondary-button" download>
                  {content.hero.CV} <span>↓</span>
               </a>
 
