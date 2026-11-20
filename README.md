@@ -19,4 +19,5 @@ experience, education, and independent projects.
 ## 👩‍💻 Developer
 
 Sara Aseman-Manzar
+
 Software Developer | Android & React Development
