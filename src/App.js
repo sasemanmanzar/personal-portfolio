@@ -10,6 +10,7 @@ import handymanIcon from "./assets/icons/handyman.svg";
 import dashboardCustomizeIcon from "./assets/icons/dashboard_customize.svg";
 import callIcon from "./assets/icons/call.svg";
 import paletteIcon from "./assets/icons/palette.svg";
+import { useState } from "react";
 
 
 function HeroVisual() {
@@ -64,6 +65,16 @@ function HeroVisual() {
 
 
 function App() {
+
+  const [showAllPublications, setShowAllPublications] = useState(false);
+  const featuredPublications = [
+    1, 4, 7
+  ]; // شماره مقاله‌های انتخابی
+
+  const displayedPublications = showAllPublications
+    ? content.publications
+    : featuredPublications.map(index => content.publications[index]);
+
   return (
     <div className="portfolio">
 
@@ -661,7 +672,7 @@ function App() {
             </div>
 
             <div className="publications-list">
-              {content.publications.map((paper, index) => (
+              {displayedPublications.map((paper, index) => (
                 <article className="publication-item" key={index}>
 
                   <span className="publication-number" style={{ fontSize: "16px" }}>✦
@@ -698,6 +709,17 @@ function App() {
                 </article>
               ))}
             </div>
+
+            {content.publications.length > 3 && (
+              <button
+                className="publications-toggle"
+                onClick={() => setShowAllPublications(!showAllPublications)}
+              >
+                {showAllPublications
+                  ? "Show Less ↑"
+                  : "View All Publications ↗"}
+              </button>
+            )}
 
           </div>
         </section>

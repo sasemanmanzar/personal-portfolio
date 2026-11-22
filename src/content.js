@@ -125,7 +125,7 @@ const content = {
   publication:{
     label:"07 / RESEARCH",
     heading:"Publications",
-    headingText:"Research contributions in Computer Science and Software Engineering."
+    headingText:"Published research papers in Computer Science and Software Engineering, covering Data Mining, Knowledge Management, and Requirements Engineering."
   },
 
   

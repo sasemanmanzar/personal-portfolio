@@ -1400,6 +1400,23 @@
   border-color: var(--primary-color);
 }
 
+.publications-toggle {
+  display: block;
+  margin: 28px auto 0 0;
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.publications-toggle:hover {
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .publications-section {
     padding: 75px 0;
