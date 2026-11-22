@@ -133,7 +133,7 @@ function App() {
               <a href="https://github.com/sasemanmanzar" target="_blank" rel="noreferrer">
                 GitHub ↗
               </a>
-              <a href="https://linkedin.com/in/sara-asemanmanzar" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/sara-aseman-manzar/" target="_blank" rel="noreferrer">
                 LinkedIn ↗
               </a>
             </div>
